@@ -11,7 +11,7 @@ typedef pair<int, int> pii;
 
 typedef unsigned long long ull;
 
-ull inversoes(vi &vet){
+ull inversoes(vi &vet){ //Algoritmo padrão para contagem de inversões
 	if(vet.size() == 1)
 		return 0;
 	int i, med=vet.size()/2;
@@ -40,7 +40,7 @@ ull inversoes(vi &vet){
 }
 
 int comp(pii a, pii b){
-	return a.first < b.first;
+	return a.first < b.first; //Ordena baseado na primeira coordenada
 }
 
 int main(){
